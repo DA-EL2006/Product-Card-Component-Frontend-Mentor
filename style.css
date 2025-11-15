@@ -1,0 +1,115 @@
+body{
+        background-color: hsl(30, 38%, 92%);
+        min-width:375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        height:100vh;
+      }
+
+      .main-body{
+        background-color:hsl(0, 0%, 100%);
+        width:350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .major-image{
+        width:350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .text, h3{
+        font-size:clamp(0.5rem, 0.8rem + 1vw, 1rem);
+        color:hsl(228, 12%, 48%);
+        font-weight:400;
+      }
+
+      h3{
+        letter-spacing: 0.5em;
+      }
+
+      h1{
+        font-weight:2.5em;
+      }
+
+      .other{
+        padding:10px;
+      }
+
+      .price-tag{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+      }
+
+      .present{
+        font-size:28px;
+        font-weight:bolder;
+        color:hsl(158, 36%, 37%);
+        padding-right: 10px;
+      }
+
+      .crossed{
+        text-decoration: line-through;
+        color:hsl(228, 12%, 48%);
+      }
+
+      button{
+        background-color: hsl(158, 36%, 37%);
+        border-width: 0px;
+        border-radius:10px;
+        margin-bottom:15px;
+        cursor: grab;
+        transition:background-color 0.3s ease-in;
+      }
+
+      button:hover{
+        background-color:hsl(158, 42%, 18%);
+      }
+      
+      .button{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        width:300px;
+        margin-left:8px;
+      }
+
+      .cart{
+        padding-right: 7px;
+      }
+
+      .button-text{
+        font-size: medium;
+        font-weight:bold;
+        color:white;
+      }
+
+      @media(min-width:600px){
+        .main-body{
+          flex-direction:row;
+          width:700px;
+          border-top-right-radius: 10px;
+          padding-right:5px;
+        }
+
+        .major-image{
+          width:360px;
+          height:500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-top-right-radius: 0px;
+          border-bottom-left-radius: 10px;
+        }
+
+      }
